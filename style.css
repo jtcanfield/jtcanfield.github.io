@@ -3,9 +3,8 @@
   text-align: center;
 }
 
-a {
-  color: SeaGreen;
-  text-decoration: none;
+h1, h2, p, ul {
+    text-align: center;
 }
 
 img {
