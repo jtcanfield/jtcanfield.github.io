@@ -1,7 +1,10 @@
 function main() { 
 $(".html").hide();
-$(".html").fadeIn(1500);
+$(".html").fadeIn(1000);
 $(".topbar").hide();
-$(".topbar").fadeIn(4000);
+$(".topbar").fadeIn(2500);
+$(".topbar").on('click', function() { 
+    $(".topbar").fadeOut(1000);
+  });
 }
 $(document).ready(main);
