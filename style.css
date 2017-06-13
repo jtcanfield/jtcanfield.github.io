@@ -44,4 +44,5 @@ img {
 .topbar {
     position: fixed;
     top: 10px;
+    background: rgb(180, 0, 0);
 }
