@@ -14,7 +14,7 @@ body {
 title, h1, h2, p, li {
   color: #FFF;
 }
-h1 {
+h2 {
     line-height: 5em;"
 }
 img {
@@ -43,6 +43,5 @@ img {
 
 .topbar {
     position: fixed;
-    top: 10px;
     background: rgb(180, 0, 0);
 }
