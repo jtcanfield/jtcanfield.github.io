@@ -61,4 +61,5 @@ img.pictureofjt {
     position: fixed;
     background: rgb(180, 0, 0);
     top: 0%;
+    margin: 0px auto;
 }
