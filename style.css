@@ -58,6 +58,8 @@ img {
   animation-duration: 2s;
 }
 .topbar {
+    padding: 0;
+    margin: 0;
     position: fixed;
     background: rgb(180, 0, 0);
 }
