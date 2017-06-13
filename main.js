@@ -1,4 +1,5 @@
 function main() { 
+    alert("If this pops up, JS is on!");
 $(".html").hide();
 $(".html").fadeIn(1000);
 $(".topbar").hide();
