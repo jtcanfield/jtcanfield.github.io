@@ -5,6 +5,7 @@ $(".topbar").hide();
 $(".topbar").fadeIn(2500);
 $(".topbar").on('click', function() { 
     $(".topbar").fadeOut(1000);
+    //$(".topbar").hide();
   });
 }
 $(document).ready(main);
