@@ -21,7 +21,7 @@ img {
   border-radius: 100%;
 }
 
-.secondpage, .contactmepage a {
+.secondpage a {
   background: rgb(52, 216, 235);
   border: 1px solid rgb(52, 216, 235);
   border-radius: 3px;
@@ -32,15 +32,31 @@ img {
   text-transform: uppercase;
   text-decoration: none;
 }
-
-.secondpage, .contactmepage a:hover {
+.secondpage a:hover {
   background: rgb(0, 0, 35);
   color: rgb(52, 216, 235);
   border: 1px solid rgb(52, 216, 235);
   animation-name: secondpagelinkanimation;
   animation-duration: 2s;
 }
-
+.contactmepage a {
+  background: rgb(52, 216, 235);
+  border: 1px solid rgb(52, 216, 235);
+  border-radius: 3px;
+  color: rgb(0, 0, 35);
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.contactmepage a:hover {
+  background: rgb(0, 0, 35);
+  color: rgb(52, 216, 235);
+  border: 1px solid rgb(52, 216, 235);
+  animation-name: secondpagelinkanimation;
+  animation-duration: 2s;
+}
 .topbar {
     position: fixed;
     background: rgb(180, 0, 0);
