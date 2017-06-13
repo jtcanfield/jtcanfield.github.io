@@ -30,10 +30,10 @@ img {
   margin: 10px 10px;
   padding: 14px;
   text-transform: uppercase;
-  /*text-decoration: none;*/
+  text-decoration: none;
 }
 
-.secondpage a:hover {
+.secondpage, .contactmepage a:hover {
   background: rgb(0, 0, 35);
   color: rgb(52, 216, 235);
   border: 1px solid rgb(52, 216, 235);
