@@ -14,6 +14,9 @@ body {
 title, h1, h2, p, li {
   color: #FFF;
 }
+h1 {
+    line-height: 5em;"
+}
 img {
   border-radius: 100%;
 }
