@@ -15,7 +15,7 @@ title, h1, h2, p, li {
   color: #FFF;
 }
 h2 {
-    line-height: 5em;"
+    line-height: 5em;
 }
 img {
   border-radius: 100%;
@@ -62,4 +62,5 @@ img {
     margin: 0;
     position: fixed;
     background: rgb(180, 0, 0);
+    top: 0%;
 }
