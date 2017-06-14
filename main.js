@@ -1,5 +1,4 @@
 function main() { 
-$(function main() { 
 $(".div2").hide();
 $(".html").hide();
 $(".html").fadeIn(1000);
