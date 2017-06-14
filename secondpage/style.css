@@ -5,7 +5,7 @@ body {
   /*background-color: #1E1E24;*/
   text-align: left;
 }
-title, h1, h2, p, li {
+title, h1, h2, p, li, form {
   color: #FFF;
 }
 * {
