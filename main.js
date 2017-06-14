@@ -1,4 +1,5 @@
 function main() { 
+$(function main() { 
 $(".div2").hide();
 $(".html").hide();
 $(".html").fadeIn(1000);
@@ -10,6 +11,7 @@ $(".topbar").on('click', function() {
 $(".changepage").on('click', function() { 
    $(".div1").slideToggle(1000);
    $(".div2").slideToggle(1000);
+   $(".topbar").hide(1000);
   });
 }
 $(document).ready(main);
