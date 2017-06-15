@@ -3,13 +3,13 @@ $(".html").hide();
 $(".html").fadeIn(1000);
 }
 $(document).ready(main);
-function incrementValue(){
-    var value = parseInt(document.getElementById('number').value, 10);
+$(document).ready(function(){
+		$("#incrementbutton").click(function(){
+    var value = parseInt(document.getElementById('incrementnumber').value, 10);
     value = isNaN(value) ? 0 : value;
     value++;
-    document.getElementById('number').value = value;
-}
-$(document).ready(function(){
+    document.getElementById('incrementnumber').value = value;
+				});
     $("#addbutton").click(function(){
         var toAdd = $("input[name=checkListItem]").val();
         $(".list").append("<div class='item'>" + toAdd + "</div>");
@@ -18,4 +18,4 @@ $(document).ready(function(){
         if("input:checkbox:checked"){
         $(".item").remove();}
         });
-    });
+});
