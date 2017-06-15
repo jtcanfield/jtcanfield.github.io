@@ -15,7 +15,9 @@ $(document).ready(function(){
         $(".list").append("<div class='item'>" + toAdd + "</div>");
         });
      $("#deletebutton").click(function(){
-        if("input:checkbox:checked"){
-        $(".item").remove();}
+        $(".item").remove();
+        });
+     $(".list").on('click', '.item', function() {
+        $(this).remove();
         });
 });
