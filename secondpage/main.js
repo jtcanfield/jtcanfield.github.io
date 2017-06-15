@@ -64,5 +64,12 @@ toppinganswer.innerHTML= alltoppings;
 var subtotalamount = document.getElementById("subtotalamount");
 subtotalamount.innerHTML = subTotal;
 
+var tax = document.getElementById("taxamount");
+var getTax = subTotal * 0.06;
+tax.innerHTML = getTax;
+
+var finalamount = document.getElementById("finalamount");
+var getFinal = subTotal + getTax;
+finalamount.innerHTML = getFinal;
 });
 });
