@@ -1,6 +1,6 @@
 function main() { 
 $(".html").hide();
-$(".html").fadeIn(2000);
+$(".html").fadeIn(1000);
 }
 $(document).ready(main);
 function incrementValue(){
@@ -9,3 +9,13 @@ function incrementValue(){
     value++;
     document.getElementById('number').value = value;
 }
+$(document).ready(function(){
+    $("#addbutton").click(function(){
+        var toAdd = $("input[name=checkListItem]").val();
+        $(".list").append("<div class='item'>" + toAdd + "</div>");
+        });
+     $("#deletebutton").click(function(){
+        if("input:checkbox:checked"){
+        $(".item").remove();}
+        });
+    });
