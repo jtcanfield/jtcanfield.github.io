@@ -68,8 +68,13 @@ var tax = document.getElementById("taxamount");
 var getTax = subTotal * 0.06;
 tax.innerHTML = getTax;
 
+var tipamount = document.getElementById("tipamount");
+var getTip = $('input:text').val();
+getTip = getTip * 1;
+tipamount.innerHTML = getTip;
+
 var finalamount = document.getElementById("finalamount");
-var getFinal = subTotal + getTax;
+var getFinal = subTotal + getTip + getTax;
 finalamount.innerHTML = getFinal;
 });
 });
