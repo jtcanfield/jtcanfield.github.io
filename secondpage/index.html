@@ -15,14 +15,27 @@
       </form>
       <h2>Select a crust type:</h2>
       <form>
-        <input type="radio" name="crust" value="thin" id="crustthin"> Thin<br>
+        <input type="radio" name="crust" value="filled" id="crustfilled"> Filled<br>
         <input type="radio" name="crust" value="thick" id="crustthick"> Thick<br>
-        <input type="radio" name="crust" value="filled" id="crustfilled"> Filled
+        <input type="radio" name="crust" value="thin" id="crustthin"> Thin
+      </form>
+      <h2>Select Toppings:</h2>
+      <form>
+        <input type="checkbox" name="topping" value="pepperoni" id="pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="topping" value="bacon" id="bacon"> Bacon <br>
+        <input type="checkbox" name="topping" value="sausage" id="sausage"> Sausage <br>
+        <input type="checkbox" name="topping" value="beef" id="beef"> Beef <br>
+        <input type="checkbox" name="topping" value="pineapple" id="pineapple"> Pineapple <br>
+        <input type="checkbox" name="topping" value="tomatoes" id="tomatoes"> Tomatoes <br>
+        <input type="checkbox" name="topping" value="greenpeppers" id="greenpeppers"> Green Peppers <br>
+        <input type="checkbox" name="topping" value="pickles" id="pickles"> Pickles <br>
+        <input type="checkbox" name="topping" value="extracheese" id="extracheese"> Extra Cheese
       </form>
       <button class="submitorder">Submit Order</button>
       <p>Pizza Size: <span id="sizeanswer"></span></p>
       <p>Crust: <span id="crustanswer"></span></p>
-      <p>Total Amount: <span id="answer"></span></p>
+      <p>Toppings: <span id="toppinganswer"></span></p>
+      <p>Sub Total: $<span id="subtotalamount"></span></p>
     </body>
   </head>  
 </html>
