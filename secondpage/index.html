@@ -6,89 +6,23 @@
     <link href="/secondpage/style.css" type="text/css" rel="stylesheet">
     <title>Order a Pizza</title>
     <body>
-      <h1>Hi! this is a frustrating work in progress... its taking me a while. thankya!</h1>
-      <form name="size">
-        <input type="radio" name="size" value="large"> Large<br>
-        <input type="radio" name="size" value="medium"> Medium<br>
-        <input type="radio" name="size" value="small"> Small
+      <h1>Order a Pizza:</h1>
+      <h2>Select a pizza size:</h2>
+      <form>
+        <input type="radio" name="size" value="large" id="sizelarge"> Large<br>
+        <input type="radio" name="size" value="medium" id="sizemedium"> Medium<br>
+        <input type="radio" name="size" value="small" id="sizesmall"> Small
       </form>
-      <form name="crust">
-        <input type="radio" name="crust" value="thin"> Thin<br>
-        <input type="radio" name="crust" value="thick"> Thick<br>
-        <input type="radio" name="crust" value="filled"> Filled
+      <h2>Select a crust type:</h2>
+      <form>
+        <input type="radio" name="crust" value="thin" id="crustthin"> Thin<br>
+        <input type="radio" name="crust" value="thick" id="crustthick"> Thick<br>
+        <input type="radio" name="crust" value="filled" id="crustfilled"> Filled
       </form>
-      <p id="final">pizza ordering:
-      
-            <script type="text/javascript">
-      function takeOrder(size, crust, topping1, topping2){
-  var validOrder = true
-  switch (size){
-    case "large":
-      subTotal = subTotal + 12;
-      break;
-    case "medium":
-      subTotal = subTotal + 10;
-      break;
-    case "small":
-      subTotal = subTotal + 8;
-      break;
-    default:
-      console.log("Invald Size, please pick a valid size");
-      validOrder = false;
-      break;
-  }
-  switch (crust){
-    case "thin":
-      subTotal = subTotal + 1;
-      break;
-    case "thick":
-      subTotal = subTotal + 2;
-      break;
-    case "filled":
-      subTotal = subTotal + 5;
-      break;
-    default:
-      console.log("Invald Crust, please pick a valid crust type");
-      validOrder = false;
-      break;
-  }
-  if (topping1 !== undefined){
-     subTotal = subTotal + 0.5;
-  } else { topping1 = ""; }
-  if (topping2 !== undefined){
-    subTotal = subTotal + 0.5;
-  } else { topping2 = "";  }
-  if (validOrder !== false){
-  console.log("You ordered a " + size + " pizza with " + crust + " crust and the following toppings:\n" + topping1 + "\n" + topping2 + "\nYour total cost is: $" + subTotal + 0);
-  } else {
-  }
-  return document.getElementById("answer").innerHTML = 5;
-}
-function getTax(){
-  return subTotal * 0.06;
-}
-function finalCost(){
-  return getTax() + subTotal;
-}
-//takeOrder("large", "thin", "cheese");
-console.log("Total tax on this order: $" + getTax());
-console.log("Final cost: $" + finalCost());
-</script>
-</p>
-      <button onclick="takeOrder()">Submit Order</button>
-      <p >
-      Total Amount: <span id="answer"></span>
-      </p>
-      <p >
-      Crust: <span name="crust"></span>
-      </p>
-      <p id="answer">
-      2ndanswer is
-      <script type="text/javascript">
-      var number = 5;
-        document.write(number);
-      </script>
-      </p>
+      <button class="submitorder">Submit Order</button>
+      <p>Pizza Size: <span id="sizeanswer"></span></p>
+      <p>Crust: <span id="crustanswer"></span></p>
+      <p>Total Amount: <span id="answer"></span></p>
     </body>
   </head>  
 </html>
