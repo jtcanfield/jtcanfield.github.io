@@ -2,10 +2,6 @@
     from {left:120%; top:120%;}
     to {left:-50%; top:-50%;}
 }
-@keyframes cometanimationr {
-    from {left:120%; top:120%;}
-    to {left:-50%; top:-50%;}
-}
 body {
   padding: 0;
   margin: 0;
@@ -16,16 +12,12 @@ body {
 title, h1, h2, h3, h4, div {
   color: #FFF;
 }
-#part1, #part2, #part3, #part4 {
+#part1, #part2, #part3, #part4, #part5, #part6, #part7, #part8, #part9, #part10 {
   position: absolute;
   padding: 20%;
 }
 .animationactivated {
       animation-name: cometanimation;
-      animation-duration: 10s;
-}
-.animationactivatedr {
-      animation-name: cometanimationr;
       animation-duration: 10s;
 }
 .cometcolor {
@@ -53,10 +45,8 @@ title, h1, h2, h3, h4, div {
       top:120%;
       cursor: pointer;
 }
-#cometr {
+#cometa, #cometb, #cometc, #cometd, #comete, #cometf, #cometg, #cometh, #cometi, #cometj, #cometk, #cometl, #cometm {
       border-radius: 100%;
       position:fixed;
-      left:120%;
-      top:120%;
       cursor: pointer;
 }
