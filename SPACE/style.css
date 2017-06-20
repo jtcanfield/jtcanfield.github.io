@@ -2,6 +2,10 @@
     from {left:120%; top:120%;}
     to {left:-50%; top:-50%;}
     }
+    @keyframes cometanimationr {
+    from {left:120%; top:120%;}
+    to {left:-50%; top:-50%;}
+    }
 body {
   padding: 0;
   margin: 0;
@@ -12,6 +16,18 @@ body {
 title, h1, h2, h3, h4, div {
   color: #FFF;
 }
+.animationactivated {
+      animation-name: cometanimation;
+      animation-duration: 10s;
+}
+#part1, #part2, #part3, #part4 {
+  position: absolute;
+  padding: 20%;
+}
+.animationactivatedr {
+      animation-name: cometanimation;
+      animation-duration: 10s;
+}
 #comet {
       height: 3em;
       width: 3em;
@@ -21,11 +37,12 @@ title, h1, h2, h3, h4, div {
       left:120%;
       top:120%;
 }
-.animationactivated{
-      animation-name: cometanimation;
-      animation-duration: 10s;
-}
-#part1, #part2, #part3, #part4 {
-  position: absolute;
-  padding: 20%;
+#cometr {
+      height: 3em;
+      width: 3em;
+      border-radius: 100%;
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#005D88), to(#161F88));
+      position:fixed;
+      left:120%;
+      top:120%;
 }
