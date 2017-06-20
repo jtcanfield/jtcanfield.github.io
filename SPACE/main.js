@@ -2,6 +2,10 @@ function main() {
 }
 $(document).ready(main);
 $(document).ready(function() {  
+$("div").hover(function(){
+        $(this).toggleClass("red");
+        $(this).toggleClass("cometcolor");
+});
 $("#part1").hide();
 $("#part2").hide();
 $("#part3").hide();
@@ -14,7 +18,7 @@ $("#part2").delay(12000).fadeIn(4000);
 $("#part2").delay(4000).fadeOut(4000);
 $("#part3").delay(24000).fadeIn(4000);
 $("#part3").delay(4000).fadeOut(4000);
-$("#comet").delay(36000).fadeIn(0).addClass("animationactivated");
+$("#comet").delay(35000).fadeIn(0).addClass("animationactivated");
 $("#part4").delay(38000).fadeIn(2000);
 $("#part4").delay(4000).fadeOut(2000);
 });
