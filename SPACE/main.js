@@ -6,6 +6,11 @@ $("div").hover(function(){
         $(this).toggleClass("red");
         $(this).toggleClass("cometcolor");
 });
+$("div").click(function(){
+	$(this).removeClass("cometcolor");
+        $(this).removeClass("red");
+        $(this).addClass("explode").fadeOut(1000);
+});
 $("#part1").hide();
 $("#part2").hide();
 $("#part3").hide();
