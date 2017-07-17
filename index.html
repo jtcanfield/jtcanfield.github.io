@@ -38,11 +38,22 @@
  </div><!--closes div1-->
  <div class="div2">
   <div>
-    <h3>About Me</h3>
+    <h3>Sign this and show that you were here!</h3>
+    <input type="text" id="add_name" name="add_name">
+     <input onclick="addName()" type="submit" value="Submit">
+        <div class="list"></div>
+     <br><br><br>
+      <script>
+      var input = document.getElementById("add_name");
+        function addName(){
+          var toAdd = $("input[name=add_name]").val();
+          $(".list").append("<div class='item'>" + toAdd +" was here!" + "</div>");
+        };
+    </script>
   </div>
  </div><!--closes div2-->
  <div class="changepage">
-  <a>This button will eventually cause this page to fade and another to pop up</a>
+  <a>More Info</a>
  </div>
   <p>Made with HTML, CSS, JS, jQuery</p>
   <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
