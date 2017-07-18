@@ -2,7 +2,6 @@ body {
   padding: 0;
   margin: 0;
   background-color: rgb(0, 0, 35);
-  /*background-color: #1E1E24;*/
   text-align: left;
 }
 title, h1, h2, p, li {
@@ -10,4 +9,21 @@ title, h1, h2, p, li {
 }
 * {
   font-family: 'Georgia', 'Times', serif;
+}
+#addbutton, #deletebutton {
+    display: inline-block;
+    height:20px;
+	width:70px;
+	background-color:#cc0000;
+	font-family:arial;
+	font-weight:bold;
+	color:#ffffff;
+	border-radius: 5px;
+	text-align:center;
+	margin-top:2px;
+}
+
+.list {
+	font-family:garamond;
+	color:#FFF;
 }

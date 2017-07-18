@@ -1,0 +1,53 @@
+@keyframes cometanimation {
+    from {left:120%; top:120%;}
+    to {left:-50%; top:-50%;}
+}
+body {
+  padding: 0;
+  margin: 0;
+  /*background-image: url('http://bit.ly/UpQgJ6');*/
+  background-image: url("http://www.storywarren.com/wp-content/uploads/2016/09/space-1.jpg");
+  background-size: cover;
+  text-align: center;
+}
+title, h1, h2, h3, h4, div {
+  color: #FFF;
+}
+#part1, #part2, #part3, #part4, #part5, #part6, #part7, #part8, #part9, #part10 {
+  position: absolute;
+  padding: 20%;
+}
+.animationactivated {
+      animation-name: cometanimation;
+      animation-duration: 10s;
+}
+.cometcolor {
+        height: 3em;
+        width: 3em;
+        background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#005D88), to(#161F88));
+}
+.red {
+      height: 3em;
+      width: 3em;
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#330000), to(#CC0000));
+}
+.explode {
+      background-image: -webkit-gradient(linear, 0% 0%, 0% 80%, from(#FFF51E), to(#858007));
+      webkit-transition: border 1s ease-out;
+      -moz-transition: border 1s ease-out;
+      -o-transition: border 1s ease-out;
+      transition: border 1s ease-out;
+      border: 5em solid #858007;
+}
+#comet {
+      border-radius: 100%;
+      position:fixed;
+      left:120%;
+      top:120%;
+      cursor: pointer;
+}
+#cometa, #cometb, #cometc, #cometd, #comete, #cometf, #cometg, #cometh, #cometi, #cometj, #cometk, #cometl, #cometm {
+      border-radius: 100%;
+      position:fixed;
+      cursor: pointer;
+}
