@@ -2,6 +2,14 @@
     from {background-color: rgb(52, 216, 235); color: rgb(0, 0, 35);}
     to {background-color: rgb(0, 0, 35); color: rgb(52, 216, 235);}
 }
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 .html {
   background-color: rgb(0, 0, 0);
 }
@@ -23,31 +31,28 @@
   text-align: center;
   margin: 0;
 }
-title, h1, h2, p, li, h3 {
+title, h1, h2, p, li, h3, .div2 {
   color: #FFF;
 }
 img.pictureofjt {
   border-radius: 100%;
   width: 30%;
 }
-
-.secondpage a {
-  background: rgb(52, 216, 235);
-  border: 1px solid rgb(52, 216, 235);
-  border-radius: 3px;
-  color: rgb(0, 0, 35);
-  display: inline-block;
-  margin: 10px 10px;
-  padding: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
+img.pictureofjtspin {
+  border-radius: 100%;
+  width: 20%;
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
-.secondpage a:hover {
-  background: rgb(0, 0, 35);
-  color: rgb(52, 216, 235);
-  border: 1px solid rgb(52, 216, 235);
-  animation-name: secondpagelinkanimation;
-  animation-duration: 1s;
+.topbar {
+    padding: 0;
+    margin: 0;
+    position: fixed;
+    background: rgb(180, 0, 0);
+    top: 0%;
+    margin: 0px auto;
 }
 .jsscriptspage a {
   background: rgb(52, 216, 235);
@@ -67,7 +72,45 @@ img.pictureofjt {
   animation-name: secondpagelinkanimation;
   animation-duration: 1s;
 }
+.secondpage a {
+  background: rgb(52, 216, 235);
+  border: 1px solid rgb(52, 216, 235);
+  border-radius: 3px;
+  color: rgb(0, 0, 35);
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.secondpage a:hover {
+  background: rgb(0, 0, 35);
+  color: rgb(52, 216, 235);
+  border: 1px solid rgb(52, 216, 235);
+  animation-name: secondpagelinkanimation;
+  animation-duration: 1s;
+}
 
+.SPACE a {
+  //background: rgb(52, 216, 235);
+  /*background-image: url('http://bit.ly/UpQgJ6');*/
+  background-image: url('http://www.storywarren.com/wp-content/uploads/2016/09/space-1.jpg');
+  border: 1px solid rgb(52, 216, 235);
+  border-radius: 3px;
+  color: rgb(0, 0, 35);
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.SPACE a:hover {
+  background: rgb(0, 0, 35);
+  color: rgb(52, 216, 235);
+  border: 1px solid rgb(52, 216, 235);
+  animation-name: secondpagelinkanimation;
+  animation-duration: 1s;
+}
 .contactmepage a {
   background: rgb(52, 216, 235);
   border: 1px solid rgb(52, 216, 235);
@@ -103,12 +146,4 @@ img.pictureofjt {
   border: 1px solid rgb(52, 216, 235);
   animation-name: secondpagelinkanimation;
   animation-duration: 1s;
-}
-.topbar {
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    background: rgb(180, 0, 0);
-    top: 0%;
-    margin: 0px auto;
 }
