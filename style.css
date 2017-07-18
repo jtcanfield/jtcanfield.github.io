@@ -45,6 +45,9 @@ img.pictureofjtspin {
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
+a {
+  cursor:pointer;
+}
 .topbar {
     padding: 0;
     margin: 0;
@@ -52,6 +55,8 @@ img.pictureofjtspin {
     background: rgb(180, 0, 0);
     top: 0%;
     margin: 0px auto;
+    display: block;
+    cursor:pointer;
 }
 .jsscriptspage a {
   background: rgb(52, 216, 235);
