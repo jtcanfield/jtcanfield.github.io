@@ -17,12 +17,12 @@ $(document).ready(main);
 $(document).ready(function() {
    $('a').mouseenter(function() {
        $(this).animate({
-           height: '+=10px'
+           padding: "+=10px",
        });
    });
    $('a').mouseleave(function() {
        $(this).animate({
-           height: '-=10px'
+           padding: "-=10px",
        }); 
    });
 });
