@@ -1,12 +1,7 @@
 <!DOCTYPE html>
 <html class="html">
 <head>
-  <base href="/">
-  <!-- <base href="file:///Users/jonathancanfield/workspace/jtcanfield.github.io/"> -->
-  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-  <script src='main.js'></script>
-  <link href="style.css" type="text/css" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/css/bootstrap.min.css">
+  <link href="/style.css" type="text/css" rel="stylesheet">
   <title>Jonathan's First Website</title>
 </head>
   <body>
@@ -17,7 +12,7 @@
   <div class="div1">
     <div class="body1">
       <h2>Jonathan Canfield</h2>
-      <p>Jonathan Canfield was born December 28, 1996 in Raleigh. He was homeschooled in middle and high school,  and during that time he studied politics, coding, and art.</p>
+      <p>Jonathan Canfield was borm December 28, 1996 in Raleigh. He was homeschooled in middle and high school,  and during that time he studied politics, coding, and art.</p>
       <p>Jonathan's pastimes include:</p>
       <li>Practicing coding</li>
       <li>Making website</li>
@@ -31,6 +26,9 @@
       <div class="secondpage">
         <a href="https://jtcanfield.github.io/secondpage/">Order a Pizza</a>
       </div>
+      <div class="SPACE">
+        <a href="https://jtcanfield.github.io/SPACE/">SPACE</a>
+      </div>
       <p>Check out Jonathan's new Twitter page and follow him:</p>
       <a href="https://twitter.com/jtcanfield100" target="_blank"><img class="pictureofjt" src="https://pbs.twimg.com/profile_images/874286828454649856/Q4PyaWih.jpg" alt="Picture of Jonathan which also links to Jonathan's twitter. This page is amazing to him at this time but in the future he will look back at this page and be like why did i ever do this"/> </a>
       <div class="contactmepage">
@@ -40,12 +38,26 @@
  </div><!--closes div1-->
  <div class="div2">
   <div>
-    <h3>About Me</h3>
+    <h3>Sign this and show that you were here!</h3>
+    <input type="text" id="add_name" name="add_name">
+     <input onclick="addName()" type="submit" value="Submit">
+        <div class="list"></div>
+     <br><br><br>
+      <script>
+      var input = document.getElementById("add_name");
+        function addName(){
+          var toAdd = $("input[name=add_name]").val();
+          $(".list").append("<div class='item'>" + toAdd +" was here!" + "</div>");
+        };
+    </script>
+     <img class="pictureofjtspin" src="https://pbs.twimg.com/profile_images/874286828454649856/Q4PyaWih.jpg" alt="Picture of Jonathan that spins"/>
   </div>
  </div><!--closes div2-->
  <div class="changepage">
-  <a>This button will eventually cause this page to fade and another to pop up</a>
+  <a>More Info</a>
  </div>
   <p>Made with HTML, CSS, JS, jQuery</p>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src='/main.js'></script>
  </body>
 </html>
