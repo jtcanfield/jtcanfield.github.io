@@ -3,13 +3,8 @@
     to {background-color: rgb(0, 0, 35); color: rgb(52, 216, 235);}
 }
 @keyframes spin {
-    from {
-        transform:rotate(0deg);
-    }
-    to {
-        transform:rotate(360deg);
-    }
-}
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}}
 .html {
   background-color: rgb(0, 0, 0);
 }
@@ -92,8 +87,6 @@ img.pictureofjtspin {
 }
 
 .SPACE a {
-  //background: rgb(52, 216, 235);
-  /*background-image: url('http://bit.ly/UpQgJ6');*/
   background-image: url('http://www.storywarren.com/wp-content/uploads/2016/09/space-1.jpg');
   border: 1px solid rgb(52, 216, 235);
   border-radius: 3px;
@@ -103,6 +96,7 @@ img.pictureofjtspin {
   padding: 14px;
   text-transform: uppercase;
   text-decoration: none;
+  background-attachment: fixed;
 }
 .SPACE a:hover {
   background: rgb(0, 0, 35);
