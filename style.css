@@ -10,7 +10,9 @@
     from {transform:rotate(0deg);}
     to {transform:rotate(360deg);}}
 .html {
-  background-color: #eeee;
+  background-color: rgb(135, 135, 135);
+  /*this creates a nice flash when you enter the page:
+  background-color: #eeee;*/
 }
 .div1 {
   padding-top: 5em;
