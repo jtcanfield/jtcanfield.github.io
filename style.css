@@ -7,12 +7,15 @@
   background-color: #eeee;
   background-color: rgb(135, 135, 135);*/
 }
-.div1 {
+body {
   padding: 5em 5% 0 5%;
+}
+.div1 {
+  /*padding: 5em 5% 0 5%;*/
   margin: 0;
 }
 .div2 {
-  padding: 2em 5% 0 5%;
+  /*padding: 2em 5% 0 5%;*/
   margin: 0;
 }
 .body1{
