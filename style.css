@@ -60,6 +60,23 @@ a {
     display: block;
     cursor:pointer;
 }
+#projectholder a {
+  background: rgb(52, 216, 235);
+  border: 1px solid rgb(52, 216, 235);
+  border-radius: 3px;
+  color: rgb(0, 0, 35);
+  display: inline-block;
+  margin: 10px 10px;
+  padding: 14px;
+  text-decoration: none;
+  transition: all 0.4s;
+}
+#projectholder a:hover {
+  background: rgb(0, 0, 35);
+  color: rgb(52, 216, 235);
+  border: 1px solid rgb(52, 216, 235);
+  transform: scale(1.2);
+}
 .jsscriptspage a,.angularjspage a,.secondpage a,.contactmepage a,.changepage a {
   background: rgb(52, 216, 235);
   border: 1px solid rgb(52, 216, 235);
