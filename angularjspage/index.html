@@ -11,9 +11,12 @@
       <input type="text" ng-model="yourName" placeholder="This is where you enter your name...">
       <hr>
       <h1>Your name is: {{yourName}}!</h1>
+      <h1>Change the color with js:</h2>
+        <input id="color" type="text" />
+        <input id="submitColor" value="Submit" type="button" />
+        <span id="coltext">This text should have the same color as you put in the text box</span>
       <label>Change the Color:</label>
-      <input type="text" ng-model="colorPicker" placeholder="What Color do you want this to be?">
-
+      <input type="text" ng-model="myStyle={}" placeholder="What Color do you want this to be?">
       <input type="button" value="set color" ng-click="myStyle={color:'red'}">
       <input type="button" value="set background" ng-click="myStyle={'background-color':'blue'}">
       <input type="button" value="clear" ng-click="myStyle={}">
