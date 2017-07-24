@@ -13,12 +13,12 @@
       <h1>Your name is: {{yourName}}!</h1>
       <h1>Change the color with js:</h2>
         <input id="color" type="text" />
-        <input id="submitColor" value="Submit" type="button" />
-        <span id="coltext">This text should have the same color as you put in the text box</span><br>
-      <label>Change the Color:</label>
+        <input id="submitColor" value="Submit" type="button" /><br>
+        <span id="coltext">This is cool but you have to click a button to make it happen...</span><br>
+      <label>Now try changing the color wit ANGULAR:</label>
       <div ng-style="{color: myColor}">
-          <input type="text" ng-model="myColor" placeholder="enter a color name">
-         <div>Omg my color changes!</div>
+        <input type="text" ng-model="myColor" placeholder="enter a color name">
+        <div>Omg my color changes Without having to press a button! FUN!</div>
       </div>
      <script src='/angularjspage/app.js'></script>
     </body>
