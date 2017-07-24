@@ -5,14 +5,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js"></script>
     <title>AngularJS Page</title>
    </head>
-    <body ng-controller="MainController">
+    <body ng-controller="MainController" ng-style="{color: myColor}">
       <h1>{{ title }}</h1>
       <label>Whats you name?</label>
       <input type="text" ng-model="yourName" placeholder="This is where you enter your name...">
       <hr>
       <h1>Your name is: {{yourName}}!</h1>
       <h1>Change the color</h2>
-      <label>Lets try changing the color with normal JS(type color then hit submit):</label>
+      <label>Lets try changing the color with normal JS(type color then hit submit):</label><br>
         <input id="color" type="text" />
         <input id="submitColor" value="Submit" type="button" /><br>
         <span id="coltext">This is cool but you have to click a button to make it happen...</span><br>
