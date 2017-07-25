@@ -22,12 +22,8 @@ $(".changepage").on('click', function() {
 
   function parallaxeffect(){
     var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
-    // parallax1.style.top = -scrolltop * .2 + 'px' // move parallax1 at 20% of scroll rate
     parallax1.style.backgroundPosition = "0px " + -scrolltop * .5 + 'px'
-
 }
-
-
   window.addEventListener('scroll', function(){ // on page scroll
     requestAnimationFrame(parallaxeffect) // call parallaxeffect() every screen paint
   }, false)
