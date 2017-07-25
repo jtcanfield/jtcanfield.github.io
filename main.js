@@ -18,12 +18,15 @@ $(".changepage").on('click', function() {
    || window.msRequestAnimationFrame
    || function(f){setTimeout(f, 1000/60)}
 
-  var parallaxdiv = document.getElementById('parallaxdiv')
+  // var parallaxdiv = document.getElementById('parallaxdiv')
+  var parallaxdiv = document.getElementsByClassName('html')
 
   function parallaxeffect(){
   var scrolltop = window.pageYOffset // get number of pixels document has scrolled vertically
-    parallaxdiv.style.top = -scrolltop * .2 + 'px' // move bubble1 at 20% of scroll rate
-    parallaxdiv.style.top = -scrolltop * .5 + 'px' // move bubble2 at 50% of scroll rate
+    // parallaxdiv.style.top = -scrolltop * .2 + 'px' // move bubble1 at 20% of scroll rate
+    // parallaxdiv.style.top = -scrolltop * .5 + 'px' // move bubble2 at 50% of scroll rate
+    parallaxdiv.style.backgroundPosition = "0px " + -scrolltop * .5 + 'px';
+    // document.getElementsByClassName('html').style.backgroundPosition = '0px ' + -scrolltop * .5 + 'px';
   }
 
   window.addEventListener('scroll', function(){ // on page scroll

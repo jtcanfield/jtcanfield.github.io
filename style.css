@@ -3,6 +3,7 @@
     to {transform:rotate(360deg);}}
 .html {
   background-image: url("images/goodpicofme.jpg");
+  background-position: 0px 0px; 
   /*this creates a nice flash when you enter the page:
   background-color: #eeee;
   background-color: rgb(135, 135, 135);*/
