@@ -3,28 +3,62 @@
   <head>
     <link href="/jsscriptspage/style.css" type="text/css" rel="stylesheet">
     <title>Order a Pizza</title>
-    <body>
-      <div class="body1">
-      </div>
-      <div class="body2">
-        <h1>Here's a bunch of random JS and jQuery things. Enjoy!</h1>
-        <h2>Here is an incredibly basic thing:</h2>
-        <form>
-          <input type="text" id="incrementnumber" value="0"/>
-          <input type="button" id="incrementbutton" value="Increment Value" />
-        </form>
-        <h2>This is a to do list:</h2>
-        <p>Click on an item to delete it.</p>
-        <form name="checkListForm">
-  			  <input type="text" name="checkListItem"/>
-        </form>
-        <div id="addbutton">Add!</div><br>
-        <div class="list"></div>
-        <p>This is the end of your to do list.</p>
-        <div id="deletebutton">Delete All!</div><br/>
-      </div>
-    </body>
-    <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-    <script src="/jsscriptspage/main.js"></script>
   </head>
+  <body>
+    <div class="body1">
+      <h1>Order a Pizza:</h1>
+      <h2>Select a pizza size:</h2>
+      <form>
+        <input type="radio" name="size" value="large" id="sizelarge"> Large  ($12)<br>
+        <input type="radio" name="size" value="medium" id="sizemedium"> Medium  ($10)<br>
+        <input type="radio" name="size" value="small" id="sizesmall"> Small  ($8)
+      </form>
+      <h2>Select a crust type:</h2>
+      <form>
+        <input type="radio" name="crust" value="filled" id="crustfilled"> Filled  ($5)<br>
+        <input type="radio" name="crust" value="thick" id="crustthick"> Thick  ($2)<br>
+        <input type="radio" name="crust" value="thin" id="crustthin"> Thin  ($1)
+      </form>
+      <h2>Select Toppings (All toppings are 50¢ each):</h2>
+      <form>
+        <input type="checkbox" name="topping" value="pepperoni" id="pepperoni"> Pepperoni<br>
+        <input type="checkbox" name="topping" value="bacon" id="bacon"> Bacon <br>
+        <input type="checkbox" name="topping" value="sausage" id="sausage"> Sausage <br>
+        <input type="checkbox" name="topping" value="beef" id="beef"> Beef <br>
+        <input type="checkbox" name="topping" value="pineapple" id="pineapple"> Pineapple <br>
+        <input type="checkbox" name="topping" value="tomatoes" id="tomatoes"> Tomatoes <br>
+        <input type="checkbox" name="topping" value="greenpeppers" id="greenpeppers"> Green Peppers <br>
+        <input type="checkbox" name="topping" value="pickles" id="pickles"> Pickles <br>
+        <input type="checkbox" name="topping" value="extracheese" id="extracheese"> Extra Cheese
+      </form>
+      <p>Tip: $</p><input type="text" value="0"/><br><br>
+      <button class="submitorder">Submit Order</button>
+      <p>Pizza Size: <span id="sizeanswer"></span></p>
+      <p>Crust: <span id="crustanswer"></span></p>
+      <p>Toppings: <span id="toppinganswer"></span></p>
+      <p>Sub Total: $<span id="subtotalamount"></span></p>
+      <p>Tax: $<span id="taxamount"></span></p>
+      <p>Tip: $<span id="tipamount"></span></p>
+      <p>Final Amount: $<span id="finalamount"></span></p>
+    </div>
+    <div class="body2">
+      <h1>Here's a bunch of random JS and jQuery things. Enjoy!</h1>
+      <h2>Here is an incredibly basic thing:</h2>
+      <form>
+        <input type="text" id="incrementnumber" value="0"/>
+        <input type="button" id="incrementbutton" value="Increment Value" />
+      </form>
+      <h2>This is a to do list:</h2>
+      <p>Click on an item to delete it.</p>
+      <form name="checkListForm">
+			  <input type="text" name="checkListItem"/>
+      </form>
+      <div id="addbutton">Add!</div><br>
+      <div class="list"></div>
+      <p>This is the end of your to do list.</p>
+      <div id="deletebutton">Delete All!</div><br/>
+    </div>
+  </body>
+  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
+  <script src="/jsscriptspage/main.js"></script>
 </html>
