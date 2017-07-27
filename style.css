@@ -83,7 +83,7 @@ a {
   transform: scale(1.2);
 }
 .jsscriptspage a:active, .angularjspage a:active, .secondpage a:active,.contactmepage a:active,.changepage a:active, .rockpaperscissors a:active, .rockpaperscissorsspocklizard a:active, #projectholder a:active  {
-  transform: scale(1.2);
+  transform: scale(1.4);
 }
 .SPACE a {
   background: url('http://www.storywarren.com/wp-content/uploads/2016/09/space-1.jpg') 50% 50% no-repeat;
