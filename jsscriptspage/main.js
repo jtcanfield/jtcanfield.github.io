@@ -1,6 +1,7 @@
 function main() {
 $(".html").hide();
 $(".html").fadeIn(1000);
+$(".body2").hide();
 }
 $(document).ready(main);
 $(document).ready(function(){
@@ -93,4 +94,8 @@ $(document).ready(function(){
     $(".list").on('click', '.item', function() {
         $(this).remove();
   });
+	$(".changepage").on('click', function() {
+	   $(".body1").slideToggle(1000);
+	   $(".body2").slideToggle(1000);
+	  });
 });
