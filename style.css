@@ -16,11 +16,9 @@ body {
   padding: 5em 5% 0 5%;
 }
 .div1 {
-  /*padding: 5em 5% 0 5%;*/
   margin: 0;
 }
 .div2 {
-  /*padding: 2em 5% 0 5%;*/
   margin: 0;
 }
 .body1{
@@ -28,9 +26,6 @@ body {
 }
 .body2 {
   background-color: rgb(0, 35, 0);
-}
-.changepage {
-  /*background-color: rgb(0, 0, 0);*/
 }
 * {
   font-family: 'Georgia', 'Times', serif;
@@ -65,7 +60,7 @@ a {
     display: block;
     cursor:pointer;
 }
-.jsscriptspage a,.angularjspage a,.secondpage a,.contactmepage a,.changepage a, .rockpaperscissors a, .rockpaperscissorsspocklizard a, #projectholder a  {
+.inlineLinkButton a, #projectholder a  {
   background: rgb(52, 216, 235);
   border: 1px solid rgb(52, 216, 235);
   border-radius: 3px;
@@ -76,13 +71,13 @@ a {
   text-decoration: none;
   transition: all 0.4s;
 }
-.jsscriptspage a:hover, .angularjspage a:hover, .secondpage a:hover,.contactmepage a:hover,.changepage a:hover, .rockpaperscissors a:hover, .rockpaperscissorsspocklizard a:hover, #projectholder a:hover  {
+.inlineLinkButton a:hover, #projectholder a:hover  {
   background: rgb(0, 0, 35);
   color: rgb(52, 216, 235);
   border: 1px solid rgb(52, 216, 235);
   transform: scale(1.2);
 }
-.jsscriptspage a:active, .angularjspage a:active, .secondpage a:active,.contactmepage a:active,.changepage a:active, .rockpaperscissors a:active, .rockpaperscissorsspocklizard a:active, #projectholder a:active  {
+.inlineLinkButton a:active, #projectholder a:active  {
   transform: scale(1.4);
 }
 .SPACE a {
@@ -102,9 +97,6 @@ a {
   color: rgb(52, 216, 235);
   border: 1px solid rgb(52, 216, 235);
   transform: scale(1.2);
-}
-.contactmepage a, .changepage a {
-  text-transform: uppercase;
 }
 .socialmediabutton {
   height: 30px;
