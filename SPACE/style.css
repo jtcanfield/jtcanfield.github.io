@@ -5,8 +5,8 @@
 body {
   padding: 0;
   margin: 0;
-  /*background-image: url('http://bit.ly/UpQgJ6');*/
-  background-image: url("http://www.storywarren.com/wp-content/uploads/2016/09/space-1.jpg");
+  /*background-image: url("http://www.storywarren.com/wp-content/uploads/2016/09/space-1.jpg");*/
+  background-image: url("images/SPACE.jpg");
   background-size: cover;
   text-align: center;
 }
