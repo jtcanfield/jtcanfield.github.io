@@ -50,16 +50,6 @@ img.pictureofjtspin {
 a {
   cursor:pointer;
 }
-.topbar {
-    padding: 0;
-    margin: 0;
-    position: fixed;
-    background: rgb(180, 0, 0);
-    top: 0%;
-    margin: 0px auto;
-    display: block;
-    cursor:pointer;
-}
 .inlineLinkButton a, .changepage a, #projectholder a  {
   background: rgb(52, 216, 235);
   border: 1px solid rgb(52, 216, 235);
