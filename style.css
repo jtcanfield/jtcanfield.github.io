@@ -13,7 +13,7 @@
   left: 0;
 }
 body {
-  padding: 5em 5% 0 5%;
+  padding: 5% 5% 0 5%;
 }
 .div1 {
   margin: 0;
@@ -34,6 +34,11 @@ body {
 }
 title, h1, h2, p, li, h3, .div2 {
   color: #FFF;
+}
+.linktoemail{
+  color: #FFF;
+  text-decoration: none;
+  display: block;
 }
 img.pictureofjt {
   border-radius: 100%;
