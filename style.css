@@ -37,7 +37,7 @@ title, h1, h2, p, li, h3, .div2 {
 }
 .linktoemail{
   color: #FFF;
-  text-decoration: none;
+  text-decoration: underline;
   display: block;
 }
 img.pictureofjt {
