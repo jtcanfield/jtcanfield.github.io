@@ -13,7 +13,7 @@
   left: 0;
 }
 body {
-  padding: 5% 5% 0 5%;
+  margin: 5% 5% 0 5%;
 }
 .div1 {
   margin: 0;
@@ -22,9 +22,11 @@ body {
   margin: 0;
 }
 .body1{
+  padding: 1%;
   background-color: rgb(0, 0, 35);
 }
 .body2 {
+  padding: 1%;
   background-color: rgb(0, 35, 0);
 }
 * {
