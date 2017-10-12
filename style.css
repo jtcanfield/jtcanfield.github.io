@@ -1,100 +1,82 @@
 @keyframes spin {
-    from {transform:rotate(0deg);}
-    to {transform:rotate(360deg);}}
-.html {
-  /*this creates a nice flash when you enter the page:
-  background-color: #eeee;
-  background-color: rgb(135, 135, 135);*/
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
 }
 
-#parallax1 {
-  background-image: url("images/goodpicofme.jpg");
-  top: 0;
-  left: 0;
-}
-body {
-  margin: 5% 5% 0 5%;
-}
-.div1 {
-  margin: 0;
-}
-.div2 {
-  margin: 0;
-}
-.body1{
-  padding: 1%;
-  background-color: rgb(0, 0, 35);
-}
-.body2 {
-  padding: 1%;
-  background-color: rgb(0, 35, 0);
-}
 * {
-  font-family: 'Georgia', 'Times', serif;
   text-align: center;
   margin: 0;
 }
-title, h1, h2, p, li, h3, .div2 {
-  color: #FFF;
+
+body {
+  background-color: rgba(0,0,0,0) !important;
+  background-image: url("images/bokeh-background.jpg");
+  top: 0;
+  left: 0;
 }
-.linktoemail{
-  color: #FFF;
+
+.jumbotron {
+  margin: 1em;
+  background-color: rgba(300,300,300,0.5) !important;
+}
+
+.card {
+  width: 250px;
+  margin: 1em;
+  background-color: rgba(300,300,300,0.5) !important;
+}
+
+.card img {
+  padding: 1em;
+}
+
+.nav-link {
+  background: rgba(300,300,300,0.5) !important;
+}
+
+.linktoemail {
   text-decoration: underline;
   display: block;
 }
+
 img.pictureofjt {
   border-radius: 100%;
   width: 30%;
 }
-img.pictureofjtspin {
-  border-radius: 100%;
-  width: 20%;
-    animation-name: spin;
-    animation-duration: 4000ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-}
+
 a {
   cursor:pointer;
 }
+
 .inlineLinkButton a, .changepage a, #projectholder a  {
-  background: rgb(52, 216, 235);
-  border: 1px solid rgb(52, 216, 235);
+  background: turquoise;
+  border: 1px solid navy;
   border-radius: 3px;
-  color: rgb(0, 0, 35);
+  color: navy;
   display: inline-block;
-  margin: 10px 10px;
-  padding: 14px;
+  margin: 1em;
+  padding: 1em;
   text-decoration: none;
   transition: all 0.4s;
 }
-.inlineLinkButton a:hover, .changepage a:hover, #projectholder a:hover  {
-  background: rgb(0, 0, 35);
-  color: rgb(52, 216, 235);
-  border: 1px solid rgb(52, 216, 235);
+
+.inlineLinkButton a:hover, .changepage a:hover, #projectholder a:hover, .nav-link a:hover  {
+  background: navy !important;
+  color: aqua;
+  border: 1px solid aqua;
   transform: scale(1.2);
 }
+
 .inlineLinkButton a:active, .changepage a:active, #projectholder a:active  {
   transform: scale(1.4);
 }
-.SPACE a {
-  background: url('images/SPACE.jpg') 50% 50% no-repeat;
-  border: 1px solid rgb(52, 216, 235);
-  border-radius: 3px;
-  color: rgb(0, 0, 35);
-  display: inline-block;
-  margin: 10px 10px;
-  padding: 14px;
-  text-transform: uppercase;
-  text-decoration: none;
-  background-attachment: fixed;
-  transition: all 0.4s;
-}
-.SPACE a:hover {
-  color: rgb(52, 216, 235);
-  border: 1px solid rgb(52, 216, 235);
-  transform: scale(1.2);
-}
+
 .socialmediabutton {
-  height: 30px;
+  max-height: 80px;
+  margin: 2em;
+}
+
+.socialmediabutton:hover {  
+  transform: scale(1.4);
+  transition: all 0.4s;
 }
