@@ -15,6 +15,20 @@ body {
   left: 0;
 }
 
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
 .jumbotron {
   margin: 1em;
   background-color: rgba(300,300,300,0.5) !important;
@@ -41,7 +55,8 @@ body {
 
 img.pictureofjt {
   border-radius: 100%;
-  width: 30%;
+  max-height: 300px;
+  max-width: 300px;
 }
 
 a {
@@ -54,7 +69,7 @@ a {
   border-radius: 3px;
   color: navy;
   display: inline-block;
-  margin: 1em;
+  margin: 0em 1em 1em 1em;
   padding: 1em;
   text-decoration: none;
   transition: all 0.4s;
