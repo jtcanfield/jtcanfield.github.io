@@ -15,6 +15,10 @@ body {
   left: 0;
 }
 
+.even-space {
+  justify-content: space-evenly;
+}
+
 @media (min-width: 600px){
   .name-and-photo-container{
     display: flex;
@@ -62,27 +66,38 @@ a {
   cursor:pointer;
 }
 
+@media (max-width: 723px){
+  .inlineLinkButton a, .changepage a, #projectholder a  {
+    margin: 0em 1em 1em 1em;
+  }
+}
+
+@media (min-width: 724px){
+  .inlineLinkButton a, .changepage a, #projectholder a  {
+    margin: 1em;
+  }
+}
+
 .inlineLinkButton a, .changepage a, #projectholder a  {
   background: turquoise;
   border: 1px solid navy;
   border-radius: 3px;
   color: navy;
   display: inline-block;
-  margin: 0em 1em 1em 1em;
   padding: 1em;
   text-decoration: none;
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
 
 .inlineLinkButton a:hover, .changepage a:hover, #projectholder a:hover, .nav-link a:hover  {
   background: navy !important;
   color: aqua;
   border: 1px solid aqua;
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .inlineLinkButton a:active, .changepage a:active, #projectholder a:active  {
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
 
 .socialmediabutton {
@@ -92,5 +107,5 @@ a {
 
 .socialmediabutton:hover {  
   transform: scale(1.4);
-  transition: all 0.4s;
+  transition: all 0.2s;
 }
