@@ -1,84 +1,151 @@
 <!DOCTYPE html>
-<html class="html" id="parallax1">
+<html lang="en">
   <head>
-    <link href="style.css" type="text/css" rel="stylesheet">
     <title>Jonathan Canfield</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="style.css" type="text/css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
   </head>
   <body>
-    <div class="div1">
-      <div class="body1">
-        <br><h2>Jonathan Canfield</h2><br>
-        <img class="pictureofjt" src="images/mesmall.jpg" alt="Picture of Jonathan"/>
-        <p>Jonathan Canfield was borm December 28, 1996 in Raleigh. He was homeschooled in middle and high school, and during that time he studied coding and art, animation, and phorotgraphy.</p>
+    <div class="jumbotron text-center">
+      <div>
+        <div class="name-and-photo-container">
+          <div>
+            <img class="picture-of-jt" src="images/mesmall.jpg" alt="Picture of Jonathan"/>
+          </div>
+          <div class="name-and-photo-container-name">
+            <h1>
+              Jonathan Canfield
+              <div class="social-media-button-container">
+                <a href="https://www.linkedin.com/in/jonathan-canfield-978641104/">
+                  <img class="social-media-button" src="images/linkedinimg.png" alt="LinkedIn" />
+                </a>
+                <a href="https://twitter.com/jtcanfield100">
+                  <img class="social-media-button" src="images/twitterlogo.png" alt="Twitter" />
+                </a>
+                <a href="https://github.com/jtcanfield">
+                  <img class="social-media-button" src="images/github.png" alt="GitHub" />
+                </a>
+              </div>
+            </h1>
+          </div>
+        </div>
+        <p class="lead">
+          I attended the Iron Yard Durham July - October 2017.
         <br>
-        <div id="largerprojects">
-          <h2>I am currently at the Iron Yard in Durham!<h2>
-            <div id="projectholder">
-              <a href="https://jtcanfield.github.io/risk-game/">Play Risk!</a>
-              <a href="https://jtcanfield.github.io/memory-game/">Play a Memory Game!</a>
-              <a href="https://jtcanfield.github.io/itunes-music-search/views">Seach for music on ITunes</a>
-              <a href="https://jtcanfield.github.io/battleship-game/">Play a game of Battleship!</a>
-              <a href="https://whispering-chamber-54579.herokuapp.com/login">Backend Mystery Word Guessing game</a>
-              <a href="/TIY-week-one-singleHTML">Mockup Project</a>
-            </div>
-        </div>
-        <div id="smallerprojects">
-          <h2>Other things that ive done</h2>
-          <div class="inlineLinkButton">
-            <a href="https://jtcanfield.github.io/rock-paper-scissors/RockPaperScissorsSpockLizard/">Play a game of Rock, Paper, Scissors, Spock, Lizard</a>
-          </div>
-          <div class="inlineLinkButton">
-            <a href="https://jtcanfield.github.io/rock-paper-scissors/">Play a game of Rock, Paper, and Scissors</a>
-          </div>
-          <div class="inlineLinkButton">
-            <a href="https://jtcanfield.github.io/basic-graphic-calculator/">Basic Graphic Calculator</a>
-          </div>
-          <div class="inlineLinkButton">
-            <a href="https://jtcanfield.github.io/angularjspage/">Some random small Angular things</a>
-          </div>
-          <div class="inlineLinkButton">
-            <a href="https://jtcanfield.github.io/jsscriptspage/">Order a (fake) Pizza</a>
-          </div>
-          <div class="SPACE">
-            <a href="https://jtcanfield.github.io/SPACE/">SPACE</a>
-          </div>
-          <!-- <div class="inlineLinkButton">
-            <a href="https://jtcanfield.github.io/secondpage/">Second page</a>
-          </div>
-          <div class="inlineLinkButton">
-            <a href="https://jtcanfield.github.io/contactme/">Contact me!</a>
-          </div> -->
-        </div>
-        <!-- <div id="parallaxdiv"></div> -->
+          I went to a programming bootcamp to find a new career, and found out I love coding!
+        </p>      
       </div>
-  </div><!--closes div1-->
-  <div class="div2">
-    <div class="body2">
-      <h3>Sign this and show that you were here!</h3>
-      <input type="text" id="add_name" name="add_name">
-       <input onclick="addName()" type="submit" value="Submit">
-          <div class="list"></div>
-          <br><br><br>
-        <script>
-          var input = document.getElementById("add_name");
-          function addName(){
-            var toAdd = $("input[name=add_name]").val();
-            $(".list").append("<div class='item'>" + toAdd +" was here!" + "</div>");
-          };
-      </script>
-      <h1>Contact Me!</h1>
-      <a class="linktoemail" href="mailto:jonathantcanfield@gmail.com">Email: jonathantcanfield@gmail.com</a>
-      <img class="pictureofjtspin" src="images/mesmall.jpg" alt="Picture of Jonathan that spins"/>
+
+      <div class="album">
+        <h3>
+          I am currently looking for a developer job opportunity in the Triangle area of North Carolina!
+        </h3>
+        <h4>
+          See some of my apps below, or contact me to chat about
+          React, NodeJS, JavaScript, Java, or C#.
+        </h4>
+        <div class="container" id="projectholder">
+          <div class="row even-space">
+
+            <div class="card">
+              <img src="images/github.png">
+              <p class="card-text">
+                <a href="https://jtcanfield.github.io/risk-game/">
+                  Play Risk!
+                </a>
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="images/github.png">
+              <p class="card-text">
+                <a href="https://jtcanfield.github.io/memory-game/">
+                  Play a Memory Game!
+                </a>
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="images/github.png">
+              <p class="card-text">
+                <a href="https://jtcanfield.github.io/itunes-music-search/views">
+                  Seach for music on ITunes
+                </a>
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="images/github.png">
+              <p class="card-text">
+                <a href="https://jtcanfield.github.io/battleship-game/">
+                  Play a game of Battleship!
+                </a>
+              </p>
+            </div>
+
+            <div class="card">
+              <img src="images/github.png">
+              <p class="card-text">
+                <a href="https://whispering-chamber-54579.herokuapp.com/login">
+                  Backend Mystery Word Guessing game
+                </a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div id="smallerprojects">
+        <h2>
+          Other things that I've done:
+        </h2>
+        <ul class="nav nav-pills">
+
+          <li class="nav-item inlineLinkButton">
+            <a class="nav-link" href="https://jtcanfield.github.io/rock-paper-scissors/RockPaperScissorsSpockLizard/">
+              Play a game of Rock, Paper, Scissors, Spock, Lizard
+            </a>
+          </li>
+
+          <li class="nav-item inlineLinkButton">
+            <a class="nav-link" href="https://jtcanfield.github.io/rock-paper-scissors/">
+              Play a game of Rock, Paper, and Scissors
+            </a>
+          </li>
+
+          <li class="nav-item inlineLinkButton">
+            <a class="nav-link" href="https://jtcanfield.github.io/basic-graphic-calculator/">
+              Basic Graphic Calculator
+            </a>
+          </li>
+
+          <li class="nav-item inlineLinkButton">
+            <a class="nav-link" href="https://jtcanfield.github.io/angularjspage/">
+              Some random small Angular things
+            </a>
+          </li>
+
+          <li class="nav-item inlineLinkButton">
+            <a class="nav-link" href="https://jtcanfield.github.io/jsscriptspage/">
+              Order a (fake) Pizza
+            </a>
+          </li>
+
+        </ul>
+      </div>
+
+      <p class="text-center">
+        Made with HTML, CSS, JS, jQuery
+      </p>
     </div>
-  </div><!--closes div2-->
-  <div class="changepage">
-    <a>MORE INFO</a>
-  </div>
-  <a href="https://www.linkedin.com/in/jonathan-canfield-978641104/"><img class="socialmediabutton" src="images/linkedinimg.png"/></a>
-  <a href="https://twitter.com/jtcanfield100"><img class="socialmediabutton" src="images/twitterlogo.png"/></a>
-  <a href="https://github.com/jtcanfield"><img class="socialmediabutton" src="images/github.png"/></a>
-  <p>Made with HTML, CSS, JS, jQuery</p>
-  <script src='https://code.jquery.com/jquery-3.1.0.min.js'></script>
-  <script src='main.js'></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>  
+    <script src='main.js'></script>
   </body>
 </html>
