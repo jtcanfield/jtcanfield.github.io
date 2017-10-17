@@ -15,6 +15,16 @@ body {
   left: 0;
 }
 
+h1 {
+  line-height: 0.9;
+}
+
+h1 small {
+  word-wrap: break-word;
+  word-break: normal;
+  font-size: 40%;
+}
+
 h3 {
   line-height: 1.3;
 }
@@ -117,6 +127,7 @@ a {
 .social-media-button {
   max-height: 40px;
   margin: 0.2em;
+  transition: all 0.2s;
 }
 
 @media (min-width: 770px){
@@ -126,9 +137,8 @@ a {
   }
 }
 
-.social-media-button:hover {  
+.social-media-button:hover {
   transform: scale(1.4);
-  transition: all 0.2s;
 }
 
 @media (min-width: 600px){
