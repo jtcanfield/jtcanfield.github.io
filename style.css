@@ -66,6 +66,8 @@ a, a:hover {
 }
 
 .card img {
+  height: 250px;
+
   padding: 1em;
 }
 
