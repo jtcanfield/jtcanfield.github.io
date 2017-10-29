@@ -60,7 +60,7 @@ a, a:hover {
 }
 
 .card {
-  width: 250px;
+  /*width: 250px;*/
   margin: 1em;
   background-color: rgba(300,300,300,0.5) !important;
 }
