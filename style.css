@@ -132,18 +132,18 @@ a {
 }
 
 @media (max-width: 723px){
-  .inlineLinkButton a, .changepage a, #projectholder a  {
+  .inlineLinkButton a, .changepage a, .majorprojectlink  {
     margin: 0em 1em 1em 1em;
   }
 }
 
 @media (min-width: 724px){
-  .inlineLinkButton a, .changepage a, #projectholder a  {
+  .inlineLinkButton a, .changepage a, .majorprojectlink  {
     margin: 1em;
   }
 }
 
-.inlineLinkButton a, .changepage a, #projectholder a  {
+.inlineLinkButton a, .changepage a, .majorprojectlink  {
   background: turquoise;
   border: 1px solid navy;
   border-radius: 3px;
@@ -154,14 +154,14 @@ a {
   transition: all 0.2s;
 }
 
-.inlineLinkButton a:hover, .changepage a:hover, #projectholder a:hover, .nav-link a:hover  {
+.inlineLinkButton a:hover, .changepage a:hover, .majorprojectlink:hover, .nav-link a:hover  {
   background: navy !important;
   color: aqua;
   border: 1px solid aqua;
   transform: scale(1.1);
 }
 
-.inlineLinkButton a:active, .changepage a:active, #projectholder a:active  {
+.inlineLinkButton a:active, .changepage a:active, .majorprojectlink:active  {
   transform: scale(1.2);
 }
 
