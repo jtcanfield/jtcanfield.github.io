@@ -71,7 +71,9 @@ a, a:hover {
 
 .imageofproject {
   height: 250px;
-  /*padding: 1em;*/
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .nav-link {
@@ -79,7 +81,8 @@ a, a:hover {
 }
 
 .card:hover .imageofproject{
-  /*opacity: 0.5;*/
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
