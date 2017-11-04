@@ -41,19 +41,6 @@ a, a:hover {
   justify-content: space-evenly;
 }
 
-@media (min-width: 600px){
-  .name-and-photo-container{
-    display: flex;
-    flex-direction: row-reverse;
-  }
-  .name-and-photo-container-name{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-}
-
 .jumbotron {
   margin: 1em;
   background-color: rgba(300,300,300,0.5) !important;
@@ -63,7 +50,7 @@ a, a:hover {
   position: relative;
   width: 430px;
   overflow: hidden;
-  margin: 1em;
+  margin: 10px 0;
   background-color: rgba(300,300,300,0.5) !important;
   border: 10px solid rgba(300,300,300,0);
 }
@@ -84,6 +71,7 @@ a, a:hover {
 }
 
 .card:hover .imageofproject{
+  opacity: 0;
   -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -94,6 +82,23 @@ img.picture-of-jt {
   max-height: 200px;
   max-width: 200px;
 }
+
+@media (min-width: 600px){
+  .card{
+    margin: 1em;
+  }
+  .name-and-photo-container{
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .name-and-photo-container-name{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
 
 @media (min-width: 400px){
   img.picture-of-jt {
@@ -107,9 +112,8 @@ a {
 }
 
 @media (max-width: 1024px){
-  .card img {
+  .imageofproject {
     height: 180px;
-    padding: 1em;
   }
 }
 
