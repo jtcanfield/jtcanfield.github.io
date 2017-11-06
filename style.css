@@ -112,12 +112,17 @@ img.picture-of-jt {
     justify-content: space-around;
   }
 }
-
+.media-breaks{
+  display: none;
+}
 
 @media (min-width: 400px){
   img.picture-of-jt {
     max-height: 300px;
     max-width: 300px;
+  }
+  .media-breaks{
+    display: block;
   }
 }
 
